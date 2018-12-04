@@ -9,6 +9,31 @@
   font-family: 'Inconsolata', monospace !important;
 }
 
+.listUI{
+  background: #101010;
+  color:white;
+  width:100%;
+  border: 1px solid black;
+  padding:5px;
+  margin: 15px;
+  border-radius:3px;
+  box-shadow: 2px 2px white !important;
+  font-size:20px;
+}
+
+.listUI:hover{
+  background: #151515;
+  color:white;
+  width:100%;
+  border: 1px solid black;
+  padding:5px;
+  margin: 15px;
+  border-radius:3px;
+  box-shadow: 2px 2px white !important;
+  font-size:20px;
+  transform: scale(1.005);
+}
+
 body {
   width: 100%;
   color: white;

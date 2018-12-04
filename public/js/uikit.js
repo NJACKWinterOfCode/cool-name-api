@@ -1079,6 +1079,7 @@
 
         var matches = singleTagRe.exec(html);
         if (matches) {
+	console.log(document.createElement(matches[1]));
             return document.createElement(matches[1]);
         }
 
