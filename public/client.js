@@ -23,7 +23,7 @@ $(function() {
 			$('ul#cool-names-list').empty()
 			Object.keys(data).forEach(function(key) {
 				var name = data[key]
-				$('<h3></h3>').text(name).appendTo('ul#cool-names-list')
+				$('<div align="center" class="listUI"><h3></h3></div>').text(name).appendTo('ul#cool-names-list')
 			})
 			$('input').focus()
 		})
