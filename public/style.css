@@ -15,10 +15,9 @@
   width:100%;
   border: 1px solid black;
   padding:5px;
-  margin: 15px;
   border-radius:3px;
-  box-shadow: 2px 2px white !important;
   font-size:20px;
+  margin-bottom: 15px;
 }
 
 .listUI:hover{
@@ -27,11 +26,8 @@
   width:100%;
   border: 1px solid black;
   padding:5px;
-  margin: 15px;
   border-radius:3px;
-  box-shadow: 2px 2px white !important;
   font-size:20px;
-  transform: scale(1.005);
 }
 
 body {

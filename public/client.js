@@ -11,7 +11,7 @@ $(function() {
 			$('ul#cool-names-list').empty()
 			Object.keys(data).forEach(function(key) {
 				var name = data[key]
-				$('<div align="center" class="listUI"><h3></h3></div>').text(name).appendTo('ul#cool-names-list')
+				$('<div align="center" class="listUI uk-box-shadow-large uk-box-shadow-hover-xlarge"><h3></h3></div>').text(name).appendTo('ul#cool-names-list')
 			})
 			$('input').focus()
 		})
@@ -23,7 +23,7 @@ $(function() {
 			$('ul#cool-names-list').empty()
 			Object.keys(data).forEach(function(key) {
 				var name = data[key]
-				$('<div align="center" class="listUI"><h3></h3></div>').text(name).appendTo('ul#cool-names-list')
+				$('<div align="center" class="listUI uk-box-shadow-large uk-box-shadow-hover-xlarge"><h3></h3></div>').text(name).appendTo('ul#cool-names-list')
 			})
 			$('input').focus()
 		})
