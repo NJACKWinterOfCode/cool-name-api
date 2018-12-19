@@ -340,6 +340,35 @@ uncoolifyDicts.dot = {
   'ž': 'z'
 };
 
+uncoolifyDicts.unicodemix = {
+	'ą':'a',
+	'β':'b',
+	'¢':'c',
+	'δ':'d',
+	'Σ':'e',
+	'ϝ':'f',
+	'§':'g',
+	'ℌ':'h',
+	'ℹ':'i',
+	'ℐ':'j',
+	'κ':'k',
+	'↳':'l',
+	'ϻ':'m',
+	'ͷ':'n',
+	'Φ':'o',
+	'¶':'p',
+	'ℚ':'q',
+	'ϒ':'r',
+	'$':'s',
+	'ͳ':'t',
+	'℧':'u',
+	'∨':'v',
+	'ω':'w',
+	'ϰ':'x',
+	'¥':'y',
+	'ℨ':'z',
+}
+
 uncoolify.findMatchingTheme = function(name) {
   let maxMatches = 0;
   let themeMatch = null;

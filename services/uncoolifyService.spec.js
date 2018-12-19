@@ -75,4 +75,8 @@ describe('uncoolifyService.alphaNumericeName', () => {
   it('should uncoolify doublestruck letters', () => {
     expect(alphaNumericeName('𝕙𝕖𝕝𝕝𝕠')[0]).to.equal('hello');
   });
+
+  it('should uncoolify unicodemix letters', () => {
+    expect(alphaNumericeName('ℌΣ↳↳Φ')[0]).to.equal('hello');
+  });
 })
