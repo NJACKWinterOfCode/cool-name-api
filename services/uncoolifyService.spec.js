@@ -77,6 +77,6 @@ describe('uncoolifyService.alphaNumericeName', () => {
   });
 
   it('should uncoolify unicodemix letters', () => {
-    expect(alphaNumericeName('ℌΣ↳↳Φ')[0]).to.equal('hello');
-  });
+    expect(alphaNumericeName('ℌΣ↳↳Φ')[0]).to.equal('hellos');
+  });  
 })
