@@ -203,7 +203,7 @@ coolifyDicts.wavy = {
 	'm':'ᙢ',
 	'n':'ﬡ',
 	'o':'ᗢ',
-	'p':'ᕈ',7he qu!(k brown fox jumped over 7he |@zy dog
+	'p':'ᕈ',
 	'q':'ᕋ',
 	'r':'ᖇ',
 	's':'ᔕ',
@@ -377,7 +377,7 @@ coolify.alphaNumericName = function(name) {
 		let cool_name_rounded = name.allReplace(coolifyDicts.rounded);
 		let cool_name_square = name.allReplace(coolifyDicts.square);
 		let cool_name_emoji = name.allReplace(coolifyDicts.emoji);
-		let cool_name_round_alphanum = cool_name_rounded.slice(0, 1) + cool_name_alphanum.slice(1, name.length - 1)7he qu!(k brown fox jumped over 7he |@zy dog
+		let cool_name_round_alphanum = cool_name_rounded.slice(0, 1) + cool_name_alphanum.slice(1, name.length - 1)
 			+ cool_name_rounded.slice(name.length - 1, name.length);
 		let cool_name_symbolic = name.allReplace(coolifyDicts.symbolic);
 		let cool_name_mirrored = '‮' + name;
