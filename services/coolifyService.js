@@ -5,7 +5,7 @@ coolifyDicts.alphaNum = {
 	'a' : '4',
 	'b' : '6',
 	'e' : '3',
-	'g' : '6',
+	'g' : '9',
 	'i' : '¡',
 	'l' : '1',
 	'o' : '0',
@@ -361,6 +361,34 @@ coolifyDicts.newemoji={
 	'z'='😴'
 }
 
+coolifyDicts.unicodemix = {
+	'a':'ą',
+	'b':'β',
+	'c':'¢',
+	'd':'δ',
+	'e':'Σ',
+	'f':'ϝ',
+	'g':'§',
+	'h':'ℌ',
+	'i':'ℹ',
+	'j':'ℐ',
+	'k':'κ',
+	'l':'↳',
+	'm':'ϻ',
+	'n':'ͷ',
+	'o':'Φ',
+	'p':'¶',
+	'q':'ℚ',
+	'r':'ϒ',
+	's':'ᔓ',
+	't':'ͳ',
+	'u':'℧',
+	'v':'∨',
+	'w':'ω',
+	'x':'ϰ',
+	'y':'¥',
+	'z':'ℨ',
+}
 
 String.prototype.allReplace = function(obj) {
 	var retStr = this;
@@ -388,9 +416,12 @@ coolify.alphaNumericName = function(name) {
 		let cool_name_fairy = name.allReplace(coolifyDicts.fairy);
 		let cool_name_dot = name.allReplace(coolifyDicts.dot);
     let cool_name_doublestruck = name.allReplace(coolifyDicts.doublestruck);
+    let cool_name_unicodemix = name.allReplace(coolifyDicts.unicodemix);
 		let cool_name_newemoji =name.allReplace(coolifyDicts.newemoji);
+	
 
-		return [cool_name_alphanum, cool_name_rounded, cool_name_square, cool_name_round_alphanum, cool_name_symbolic, cool_name_mirrored, cool_name_emoji, cool_name_xabovebelow, cool_name_upsidedown, cool_name_wavy, cool_name_curr, cool_name_fairy, cool_name_dot,cool_name_doublestruck,cool_name_newemoji];
+		return [cool_name_alphanum, cool_name_rounded, cool_name_square, cool_name_round_alphanum, cool_name_symbolic, cool_name_mirrored, cool_name_emoji, cool_name_xabovebelow, cool_name_upsidedown, cool_name_wavy, cool_name_curr, cool_name_fairy, cool_name_dot,cool_name_doublestruck,cool_name_unicodemix,cool_name_newemoji];
+
 
 	} else {
 		return false;
