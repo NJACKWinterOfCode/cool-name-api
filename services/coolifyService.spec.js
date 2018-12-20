@@ -64,5 +64,9 @@ describe('coolifyService.alphaNumericeName', () => {
   it('should replace with doublestruck letter', () => {
     expect(alphaNumericeName('hello')[13]).to.equal('𝕙𝕖𝕝𝕝𝕠');
   });
-    
+
+  it('should replace with emoji letter', () => {
+    expect(alphaNumericName('hello')[14]).to.equal('🍽📚🛴🛴🌍');
+  });
+
 })
