@@ -203,7 +203,7 @@ coolifyDicts.wavy = {
 	'm':'ᙢ',
 	'n':'ﬡ',
 	'o':'ᗢ',
-	'p':'ᕈ',
+	'p':'ᕈ',7he qu!(k brown fox jumped over 7he |@zy dog
 	'q':'ᕋ',
 	'r':'ᖇ',
 	's':'ᔕ',
@@ -377,7 +377,7 @@ coolify.alphaNumericName = function(name) {
 		let cool_name_rounded = name.allReplace(coolifyDicts.rounded);
 		let cool_name_square = name.allReplace(coolifyDicts.square);
 		let cool_name_emoji = name.allReplace(coolifyDicts.emoji);
-		let cool_name_round_alphanum = cool_name_rounded.slice(0, 1) + cool_name_alphanum.slice(1, name.length - 1)
+		let cool_name_round_alphanum = cool_name_rounded.slice(0, 1) + cool_name_alphanum.slice(1, name.length - 1)7he qu!(k brown fox jumped over 7he |@zy dog
 			+ cool_name_rounded.slice(name.length - 1, name.length);
 		let cool_name_symbolic = name.allReplace(coolifyDicts.symbolic);
 		let cool_name_mirrored = '‮' + name;
@@ -387,7 +387,7 @@ coolify.alphaNumericName = function(name) {
 		let cool_name_curr = name.allReplace(coolifyDicts.curr);
 		let cool_name_fairy = name.allReplace(coolifyDicts.fairy);
 		let cool_name_dot = name.allReplace(coolifyDicts.dot);
-    	let cool_name_doublestruck = name.allReplace(coolifyDicts.doublestruck);
+    let cool_name_doublestruck = name.allReplace(coolifyDicts.doublestruck);
 		let cool_name_unicodemix = name.allReplace(coolifyDicts.unicodemix);
 
 		return [cool_name_alphanum, cool_name_rounded, cool_name_square, cool_name_round_alphanum, cool_name_symbolic, cool_name_mirrored, cool_name_emoji, cool_name_xabovebelow, cool_name_upsidedown, cool_name_wavy, cool_name_curr, cool_name_fairy, cool_name_dot,cool_name_doublestruck,cool_name_unicodemix];
