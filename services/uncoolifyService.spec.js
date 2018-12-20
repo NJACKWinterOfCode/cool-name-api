@@ -25,13 +25,10 @@ describe('uncoolifyService.alphaNumericeName', () => {
   it('should uncoolify box letters', () => {
     expect(alphaNumericeName('🄷🄴🄻🄻🄾')[0]).to.equal('hello');
   });
-
-  /*
-   * TODO: Handle this case
-   * it('should round the first and last and replace all else the specified number eqv.', () => {
-   *  expect(alphaNumericeName('hello')[3]).to.equal('ⓗ311ⓞ');
-   * })
-   */
+  
+  it('should round the first and last and replace all else the specified number eqv.', () => {
+    expect(alphaNumericeName('ⓗ311ⓞ')[0]).to.equal('hello');
+  });
 
   it('should uncoolify the symbolic equivalent', () => {
     expect(alphaNumericeName('he||o(@!')[0]).to.equal('hellocai');
