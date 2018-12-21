@@ -391,22 +391,6 @@ coolify.alphaNumericName = function(name) {
 		let cool_name_dot = name.allReplace(coolifyDicts.dot);
     let cool_name_doublestruck = name.allReplace(coolifyDicts.doublestruck);
 		let cool_name_unicodemix = name.allReplace(coolifyDicts.unicodemix);
-		//Upside-down style 		
-		for(let i = 0; i<name.length; i++){
-			let n = name.charCodeAt(i);
-			let m = cool_name_upsidedown.charCodeAt(i);
-			if (n == m){ 
-			if(name[i] == "b") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "q");
-			}
-			else if(name[i] == "n") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "u");
-			}
-			else if(name[i] == "d") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "p");
-			}
-			}
-		};
 		return [cool_name_alphanum, cool_name_rounded, cool_name_square, cool_name_round_alphanum, cool_name_symbolic, cool_name_mirrored, cool_name_emoji, cool_name_xabovebelow, cool_name_upsidedown, cool_name_wavy, cool_name_curr, cool_name_fairy, cool_name_dot,cool_name_doublestruck,cool_name_unicodemix];
 
 	} else {
