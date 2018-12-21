@@ -366,6 +366,7 @@ uncoolifyDicts.unicodemix = {
 	'¥':'y',
 	'ℨ':'z',
 }
+
 uncoolifyDicts.newemoji={
 	'🥨'='a',
 	'🅱'='b',
@@ -394,6 +395,7 @@ uncoolifyDicts.newemoji={
 	'✌️'='y',
 	'😴'='z',
 }
+
 uncoolify.findMatchingTheme = function(name) {
   let maxMatches = 0;
   let themeMatch = null;
