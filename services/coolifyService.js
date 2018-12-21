@@ -393,8 +393,8 @@ coolify.alphaNumericName = function(name) {
 		let cool_name_unicodemix = name.allReplace(coolifyDicts.unicodemix);
 		//Upside-down style 		
 		for(let i = 0; i<name.length; i++){
-			var n = name.charCodeAt(i);
-			var m = cool_name_upsidedown.charCodeAt(i);
+			let n = name.charCodeAt(i);
+			let m = cool_name_upsidedown.charCodeAt(i);
 			if (n == m){ 
 			if(name[i] == "b") {
 				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "q");
