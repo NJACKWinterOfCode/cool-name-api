@@ -40,10 +40,6 @@ describe('uncoolifyService.alphaNumericeName', () => {
    *  expect(alphaNumericeName('hello')[5]).to.equal('‮hello');
    * });
    */
-  
-  /*it('should mirror each letter', () => {
-    expect(alphaNumericeName('olleh')[0]).to.equal('hello');
-  });*/
 
   it('should uncoolify emojis', () => {
     expect(alphaNumericeName('♓🎗👢👢⚽')[0]).to.equal('hello');
