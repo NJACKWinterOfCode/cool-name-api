@@ -367,7 +367,7 @@ uncoolifyDicts.unicodemix = {
 	'ℨ':'z',
 }
 
-uncoolifyDicts.newemoji={
+uncoolifyDicts.newemoji= {
 	'🥨':'a',
 	'🅱':'b',
 	'↪️':'c',
