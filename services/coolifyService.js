@@ -73,22 +73,7 @@ coolifyDicts.square = {
 	'u' : '🅄',
 	'v' : '🅅',
 	'w' : '🅆',
-	'x' : '🅇',//Upside-down style 		
-		for(let i = 0; i<name.length; i++){
-			var n = name.charCodeAt(i);
-			var m = cool_name_upsidedown.charCodeAt(i);
-			if (n == m){ 
-			if(name[i] == "b") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "q");
-			}
-			else if(name[i] == "n") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "u");
-			}
-			else if(name[i] == "d") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "p");
-			}
-			}
-		};
+	'x' : '🅇',
 	'y' : '🅈',
 	'z' : '🅉'
 };
@@ -117,22 +102,7 @@ coolifyDicts.rounded = {
 	'u' : 'ⓤ',
 	'v' : 'ⓥ',
 	'w' : 'ⓦ',
-	'x' : 'ⓧ',//Upside-down style 		
-		for(let i = 0; i<name.length; i++){
-			var n = name.charCodeAt(i);
-			var m = cool_name_upsidedown.charCodeAt(i);
-			if (n == m){ 
-			if(name[i] == "b") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "q");
-			}
-			else if(name[i] == "n") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "u");
-			}
-			else if(name[i] == "d") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "p");
-			}
-			}
-		};
+	'x' : 'ⓧ',
 	'y' : 'ⓨ',
 	'z' : 'ⓩ'
 };
@@ -203,22 +173,7 @@ coolifyDicts.upsidedown = {
 	'"' : '„',
 	'&' : '⅋',
 	'\'' : ',',
-	'\\.' : '˙',//Upside-down style 		
-		for(let i = 0; i<name.length; i++){
-			var n = name.charCodeAt(i);
-			var m = cool_name_upsidedown.charCodeAt(i);
-			if (n == m){ 
-			if(name[i] == "b") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "q");
-			}
-			else if(name[i] == "n") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "u");
-			}
-			else if(name[i] == "d") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "p");
-			}
-			}
-		};
+	'\\.' : '˙',
 	'3' : 'Ɛ',
 	'4' : 'ᔭ',
 	'6' : '9',
@@ -233,22 +188,7 @@ coolifyDicts.upsidedown = {
 }
 
 coolifyDicts.wavy = {
-	'a':'ᗩ',//Upside-down style 		
-		for(let i = 0; i<name.length; i++){
-			var n = name.charCodeAt(i);
-			var m = cool_name_upsidedown.charCodeAt(i);
-			if (n == m){ 
-			if(name[i] == "b") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "q");
-			}
-			else if(name[i] == "n") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "u");
-			}
-			else if(name[i] == "d") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "p");
-			}
-			}
-		};
+	'a':'ᗩ',
 	'b':'ᕊ',
 	'c':'ᑕ',
 	'd':'ᖙ',
@@ -261,22 +201,7 @@ coolifyDicts.wavy = {
 	'k':'Ḱ',
 	'l':'ᒪ',
 	'm':'ᙢ',
-	'n':'ﬡ',//Upside-down style 		
-		for(let i = 0; i<name.length; i++){
-			var n = name.charCodeAt(i);
-			var m = cool_name_upsidedown.charCodeAt(i);
-			if (n == m){ 
-			if(name[i] == "b") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "q");
-			}
-			else if(name[i] == "n") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "u");
-			}
-			else if(name[i] == "d") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "p");
-			}
-			}
-		};
+	'n':'ﬡ',
 	'o':'ᗢ',
 	'p':'ᕈ',
 	'q':'ᕋ',
@@ -330,37 +255,7 @@ coolifyDicts.doublestruck={
 	'f':'𝕗',
 	'g':'𝕘',
 	'h':'𝕙',
-	'i':'𝕚',//Upside-down style 		
-		for(let i = 0; i<name.length; i++){
-			var n = name.charCodeAt(i);
-			var m = cool_name_upsidedown.charCodeAt(i);
-			if (n == m){ 
-			if(name[i] == "b") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "q");
-			}//Upside-down style 		
-		for(let i = 0; i<name.length; i++){
-			var n = name.charCodeAt(i);
-			var m = cool_name_upsidedown.charCodeAt(i);
-			if (n == m){ 
-			if(name[i] == "b") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "q");
-			}
-			else if(name[i] == "n") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "u");
-			}
-			else if(name[i] == "d") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "p");
-			}
-			}
-		};
-			else if(name[i] == "n") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "u");
-			}
-			else if(name[i] == "d") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "p");
-			}
-			}
-		};
+	'i':'𝕚',
 	'j':'𝕛',
 	'k':'𝕜',
 	'l':'𝕝',
@@ -371,22 +266,7 @@ coolifyDicts.doublestruck={
 	'q':'𝕢',
 	'r':'𝕣',
 	's':'𝕤',
-	't':'𝕥',//Upside-down style 		
-		for(let i = 0; i<name.length; i++){
-			var n = name.charCodeAt(i);
-			var m = cool_name_upsidedown.charCodeAt(i);
-			if (n == m){ 
-			if(name[i] == "b") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "q");
-			}
-			else if(name[i] == "n") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "u");
-			}
-			else if(name[i] == "d") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "p");
-			}
-			}
-		};
+	't':'𝕥',
 	'u':'𝕦',
 	'v':'𝕧',
 	'w':'𝕨',
@@ -428,22 +308,7 @@ coolifyDicts.dot = {
 	'a':'å',
 	'b':'β',
 	'c':'ç',
-	'd':'ď',//Upside-down style 		
-		for(let i = 0; i<name.length; i++){
-			var n = name.charCodeAt(i);
-			var m = cool_name_upsidedown.charCodeAt(i);
-			if (n == m){ 
-			if(name[i] == "b") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "q");
-			}
-			else if(name[i] == "n") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "u");
-			}
-			else if(name[i] == "d") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "p");
-			}
-			}
-		};
+	'd':'ď',
 	'e':'£',
 	'f':'ƒ',
 	'g':'ğ',
@@ -464,22 +329,7 @@ coolifyDicts.dot = {
 	'v':'√',
 	'w':'Ψ',
 	'x':'×',
-	'y':'ÿ',//Upside-down style 		
-		for(let i = 0; i<name.length; i++){
-			var n = name.charCodeAt(i);
-			var m = cool_name_upsidedown.charCodeAt(i);
-			if (n == m){ 
-			if(name[i] == "b") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "q");
-			}
-			else if(name[i] == "n") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "u");
-			}
-			else if(name[i] == "d") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "p");
-			}
-			}
-		};
+	'y':'ÿ',
 	'z':'ž',
 }
 
@@ -491,52 +341,7 @@ coolifyDicts.unicodemix = {
 	'e':'Σ',
 	'f':'ϝ',
 	'g':'§',
-	'h':'ℌ',//Upside-down style 		
-		for(let i = 0; i<name.length; i++){
-			let n = name.charCodeAt(i);
-			let m = cool_name_upsidedown.charCodeAt(i);
-			if (n == m){ 
-			if(name[i] == "b") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "q");
-			}
-			else if(name[i] == "n") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "u");
-			}
-			else if(name[i] == "d") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "p");
-			}//Upside-down style 		
-		for(let i = 0; i<name.length; i++){
-			var n = name.charCodeAt(i);
-			var m = cool_name_upsidedown.charCodeAt(i);
-			if (n == m){ 
-			if(name[i] == "b") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "q");
-			}
-			else if(name[i] == "n") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "u");
-			}
-			else if(name[i] == "d") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "p");
-			}
-			}
-		};
-			}//Upside-down style 		
-		for(let i = 0; i<name.length; i++){
-			var n = name.charCodeAt(i);
-			var m = cool_name_upsidedown.charCodeAt(i);
-			if (n == m){ 
-			if(name[i] == "b") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "q");
-			}
-			else if(name[i] == "n") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "u");
-			}
-			else if(name[i] == "d") {
-				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "p");
-			}
-			}
-		};
-		};
+	'h':'ℌ',
 	'i':'ℹ',
 	'j':'ℐ',
 	'k':'κ',
@@ -588,8 +393,8 @@ coolify.alphaNumericName = function(name) {
 		let cool_name_unicodemix = name.allReplace(coolifyDicts.unicodemix);
 		//Upside-down style 		
 		for(let i = 0; i<name.length; i++){
-			var n = name.charCodeAt(i);
-			var m = cool_name_upsidedown.charCodeAt(i);
+			let n = name.charCodeAt(i);
+			let m = cool_name_upsidedown.charCodeAt(i);
 			if (n == m){ 
 			if(name[i] == "b") {
 				cool_name_upsidedown = cool_name_upsidedown.replaceAt(i, "q");
