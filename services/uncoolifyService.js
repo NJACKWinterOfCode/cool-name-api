@@ -396,6 +396,35 @@ uncoolifyDicts.newemoji= {
 	'😴':'z',
 }
 
+uncoolifyDicts.mathematicalfraktur = {
+  '𝔄':'a',
+  '𝔅':'b',
+  'ℭ':'c',
+  '𝔇':'d',
+  '𝔈':'e',
+  '𝔉':'f',
+  '𝔊':'g',
+  'ℌ':'h',
+  'ℑ':'i',
+  '𝔍':'j',
+  '𝔎':'k',
+  '𝔏':'l',
+  '𝔐':'m',
+  '𝔑':'n',
+  '𝔒':'o',
+  '𝔓':'p',
+  '𝔔':'q',
+  'ℜ':'r',
+  '𝔖':'s',
+  '𝔗':'t',
+  '𝔘':'u',
+  '𝔙':'v',
+  '𝔚':'w',
+  '𝔛':'x',
+  '𝔜':'y',
+  'ℨ':'z',
+}
+
 uncoolify.findMatchingTheme = function(name) {
   let maxMatches = 0;
   let themeMatch = null;
@@ -435,7 +464,7 @@ uncoolify.alphaNumericName = function(name) {
 	for(let i = 0; i<name.length; i++){
 		let n = name.charCodeAt(i);
 		let m = uncoolName.charCodeAt(i);
-		if (n == m){ 
+		if (n == m){
 			if(name[i] == "q") {
 				uncoolName = uncoolName.replaceAt(i, "b");
 			}
@@ -451,6 +480,6 @@ uncoolify.alphaNumericName = function(name) {
   return [uncoolName];
 
 };
-  
+
 
 module.exports = uncoolify;
