@@ -8,10 +8,37 @@ uncoolifyDicts.alphaNum = {
   '3': 'e',
   '4': 'a',
   '5': 's',
-  '6': 'g',
+  '6': 'b',
   '7': 't',
+  '9': 'g',
   '¡': 'i',
-  '_': ' '
+  '_': ' ',
+  'ⓐ': 'a',
+  'ⓑ': 'b',
+  'ⓒ': 'c',
+  'ⓓ': 'd',
+  'ⓔ': 'e',
+  'ⓕ': 'f',
+  'ⓖ': 'g',
+  'ⓗ': 'h',
+  'ⓘ': 'i',
+  'ⓙ': 'j',
+  'ⓚ': 'k',
+  'ⓛ': 'l',
+  'ⓜ': 'm',
+  'ⓝ': 'n',
+  'ⓞ': 'o',
+  'ⓟ': 'p',
+  'ⓠ': 'q',
+  'ⓡ': 'r',
+  'ⓢ': 's',
+  'ⓣ': 't',
+  'ⓤ': 'u',
+  'ⓥ': 'v',
+  'ⓦ': 'w',
+  'ⓧ': 'x',
+  'ⓨ': 'y',
+  'ⓩ': 'z'
 };
 
 uncoolifyDicts.xabovebelow = {
@@ -75,35 +102,6 @@ uncoolifyDicts.square = {
   '🅇': 'x',
   '🅈': 'y',
   '🅉': 'z'
-};
-uncoolifyDicts.rounded = {
-	'_' : ' ',
-  'ⓐ': 'a',
-  'ⓑ': 'b',
-  'ⓒ': 'c',
-  'ⓓ': 'd',
-  'ⓔ': 'e',
-  'ⓕ': 'f',
-  'ⓖ': 'g',
-  'ⓗ': 'h',
-  'ⓘ': 'i',
-  'ⓙ': 'j',
-  'ⓚ': 'k',
-  'ⓛ': 'l',
-  'ⓜ': 'm',
-  'ⓝ': 'n',
-  'ⓞ': 'o',
-  'ⓟ': 'p',
-  'ⓠ': 'q',
-  'ⓡ': 'r',
-  'ⓢ': 's',
-  'ⓣ': 't',
-  'ⓤ': 'u',
-  'ⓥ': 'v',
-  'ⓦ': 'w',
-  'ⓧ': 'x',
-  'ⓨ': 'y',
-  'ⓩ': 'z'
 };
 
 uncoolifyDicts.symbolic = {
@@ -340,6 +338,93 @@ uncoolifyDicts.dot = {
   'ž': 'z'
 };
 
+uncoolifyDicts.unicodemix = {
+	'ą':'a',
+	'β':'b',
+	'¢':'c',
+	'δ':'d',
+	'Σ':'e',
+	'ϝ':'f',
+	'§':'g',
+	'ℌ':'h',
+	'ℹ':'i',
+	'ℐ':'j',
+	'κ':'k',
+	'↳':'l',
+	'ϻ':'m',
+	'ͷ':'n',
+	'Φ':'o',
+	'¶':'p',
+	'ℚ':'q',
+	'ϒ':'r',
+	'ᔓ':'s',
+	'ͳ':'t',
+	'℧':'u',
+	'∨':'v',
+	'ω':'w',
+	'ϰ':'x',
+	'¥':'y',
+	'ℨ':'z',
+}
+
+uncoolifyDicts.newemoji= {
+	'🥨':'a',
+	'🅱':'b',
+	'↪️':'c',
+	'↩️':'d',
+	'📚':'e',
+	'🏳️‍🌈':'f',
+	'📿':'g',
+	'🍽':'h',
+	'🔩':'i',
+	'🃏':'j',
+	'🔀':'k',
+	'🛴':'l',
+	'Ⓜ️':'m',
+	'♑️':'n',
+	'🌍':'o',
+	'🅿️':'p',
+	'🍭':'q',
+	'➰':'r',
+	'💰':'s',
+	'☂️':'t',
+	'🤘🏼':'u',
+	'🖖':'v',
+	'🐍':'w',
+	'⚔️':'x',
+	'✌️':'y',
+	'😴':'z',
+}
+
+uncoolifyDicts.mathematicalfraktur = {
+  '𝔄':'a',
+  '𝔅':'b',
+  'ℭ':'c',
+  '𝔇':'d',
+  '𝔈':'e',
+  '𝔉':'f',
+  '𝔊':'g',
+  'ℌ':'h',
+  'ℑ':'i',
+  '𝔍':'j',
+  '𝔎':'k',
+  '𝔏':'l',
+  '𝔐':'m',
+  '𝔑':'n',
+  '𝔒':'o',
+  '𝔓':'p',
+  '𝔔':'q',
+  'ℜ':'r',
+  '𝔖':'s',
+  '𝔗':'t',
+  '𝔘':'u',
+  '𝔙':'v',
+  '𝔚':'w',
+  '𝔛':'x',
+  '𝔜':'y',
+  'ℨ':'z',
+}
+
 uncoolify.findMatchingTheme = function(name) {
   let maxMatches = 0;
   let themeMatch = null;
@@ -367,10 +452,6 @@ uncoolify.alphaNumericName = function(name) {
   if (typeof(name) != 'string') {
     return false;
   }
-  /* mirrored */
-  if (name == '‮' + name) {
-    return '‮' + name;
-  }
   let theme = uncoolify.findMatchingTheme(name);
   if (theme == null) {
     return ['Are you sure this is a cool name?'];
@@ -378,7 +459,27 @@ uncoolify.alphaNumericName = function(name) {
     theme = symbolicRegex;
   }
   let uncoolName = name.allReplace(theme);
+  // For uncoolify upside down
+  if (theme == uncoolifyDicts.upsidedown){
+	for(let i = 0; i<name.length; i++){
+		let n = name.charCodeAt(i);
+		let m = uncoolName.charCodeAt(i);
+		if (n == m){
+			if(name[i] == "q") {
+				uncoolName = uncoolName.replaceAt(i, "b");
+			}
+			else if(name[i] == "u") {
+				uncoolName = uncoolName.replaceAt(i, "n");
+			}
+			else if(name[i] == "p") {
+				uncoolName = uncoolName.replaceAt(i, "d");
+			}
+			}
+ };
+ }
   return [uncoolName];
+
 };
+
 
 module.exports = uncoolify;

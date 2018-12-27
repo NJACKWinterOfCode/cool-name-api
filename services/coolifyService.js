@@ -5,7 +5,7 @@ coolifyDicts.alphaNum = {
 	'a' : '4',
 	'b' : '6',
 	'e' : '3',
-	'g' : '6',
+	'g' : '9',
 	'i' : '¡',
 	'l' : '1',
 	'o' : '0',
@@ -333,6 +333,92 @@ coolifyDicts.dot = {
 	'z':'ž',
 }
 
+coolifyDicts.unicodemix = {
+	'a':'ą',
+	'b':'β',
+	'c':'¢',
+	'd':'δ',
+	'e':'Σ',
+	'f':'ϝ',
+	'g':'§',
+	'h':'ℌ',
+	'i':'ℹ',
+	'j':'ℐ',
+	'k':'κ',
+	'l':'↳',
+	'm':'ϻ',
+	'n':'ͷ',
+	'o':'Φ',
+	'p':'¶',
+	'q':'ℚ',
+	'r':'ϒ',
+	's':'ᔓ',
+	't':'ͳ',
+	'u':'℧',
+	'v':'∨',
+	'w':'ω',
+	'x':'ϰ',
+	'y':'¥',
+	'z':'ℨ',
+}
+
+coolifyDicts.newemoji= {
+	'a':'🥨',
+	'b':'🅱',
+	'c':'↪️',
+	'd':'↩️',
+	'e':'📚',
+	'f':'🏳️‍🌈',
+	'g':'📿',
+	'h':'🍽',
+	'i':'🔩',
+	'j':'🃏',
+	'k':'🔀',
+	'l':'🛴',
+	'm':'Ⓜ️',
+	'n':'♑️',
+	'o':'🌍',
+	'p':'🅿️',
+	'q':'🍭',
+	'r':'➰',
+	's':'💰',
+	't':'☂️',
+	'u':'🤘🏼',
+	'v':'🖖',
+	'w':'🐍',
+	'x':'⚔️',
+	'y':'✌️',
+	'z':'😴',
+}
+
+coolifyDicts.mathematicalfraktur = {
+	'a':'𝔄',
+	'b':'𝔅',
+	'c':'ℭ',
+	'd':'𝔇',
+	'e':'𝔈',
+	'f':'𝔉',
+	'g':'𝔊',
+	'h':'ℌ',
+	'i':'ℑ',
+	'j':'𝔍',
+	'k':'𝔎',
+	'l':'𝔏',
+	'm':'𝔐',
+	'n':'𝔑',
+	'o':'𝔒',
+	'p':'𝔓',
+	'q':'𝔔',
+	'r':'ℜ',
+	's':'𝔖',
+	't':'𝔗',
+	'u':'𝔘',
+	'v':'𝔙',
+	'w':'𝔚',
+	'x':'𝔛',
+	'y':'𝔜',
+	'z':'ℨ',
+}
 
 String.prototype.allReplace = function(obj) {
 	var retStr = this;
@@ -360,8 +446,13 @@ coolify.alphaNumericName = function(name) {
 		let cool_name_fairy = name.allReplace(coolifyDicts.fairy);
 		let cool_name_dot = name.allReplace(coolifyDicts.dot);
     let cool_name_doublestruck = name.allReplace(coolifyDicts.doublestruck);
+    let cool_name_unicodemix = name.allReplace(coolifyDicts.unicodemix);
+		let cool_name_newemoji = name.allReplace(coolifyDicts.newemoji);
+		let cool_name_mathematicalfraktur = name.allReplace(coolifyDicts.mathematicalfraktur);
 
-		return [cool_name_alphanum, cool_name_rounded, cool_name_square, cool_name_round_alphanum, cool_name_symbolic, cool_name_mirrored, cool_name_emoji, cool_name_xabovebelow, cool_name_upsidedown, cool_name_wavy, cool_name_curr, cool_name_fairy, cool_name_dot,cool_name_doublestruck];
+
+		return [cool_name_alphanum, cool_name_rounded, cool_name_square, cool_name_round_alphanum, cool_name_symbolic, cool_name_mirrored, cool_name_emoji, cool_name_xabovebelow, cool_name_upsidedown, cool_name_wavy, cool_name_curr, cool_name_fairy, cool_name_dot,cool_name_doublestruck,cool_name_unicodemix,cool_name_newemoji,cool_name_mathematicalfraktur];
+
 
 	} else {
 		return false;
