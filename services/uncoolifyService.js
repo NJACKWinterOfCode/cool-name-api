@@ -448,9 +448,36 @@ uncoolify.findMatchingTheme = function(name) {
   return themeMatch;
 };
 
+uncoolify.findMatchingTheme = function(name) {
+  let maxMatches = 0;
+  let themeMatch = null;
+  for (let [theme, pairs] of Object.entries(uncoolifyDicts)) {
+    let tempMatches = 0;
+    for (let letter in pairs) {
+      if (name.indexOf(letter) > -1) {
+        if (letter != '_') {
+          tempMatches += 1;
+        }
+      }
+    }
+    if (tempMatches > maxMatches) {
+      maxMatches = tempMatches;
+      themeMatch = pairs;
+      if (name.length == tempMatches) {
+        return themeMatch;
+      }
+    }
+  }
+  return themeMatch;
+};
+
 uncoolify.alphaNumericName = function(name) {
   if (typeof(name) != 'string') {
     return false;
+  }
+  /* mirrored */
+  if (name == '‮' + name) {
+    return '‮' + name;
   }
   let theme = uncoolify.findMatchingTheme(name);
   if (theme == null) {
@@ -459,27 +486,7 @@ uncoolify.alphaNumericName = function(name) {
     theme = symbolicRegex;
   }
   let uncoolName = name.allReplace(theme);
-  // For uncoolify upside down
-  if (theme == uncoolifyDicts.upsidedown){
-	for(let i = 0; i<name.length; i++){
-		let n = name.charCodeAt(i);
-		let m = uncoolName.charCodeAt(i);
-		if (n == m){
-			if(name[i] == "q") {
-				uncoolName = uncoolName.replaceAt(i, "b");
-			}
-			else if(name[i] == "u") {
-				uncoolName = uncoolName.replaceAt(i, "n");
-			}
-			else if(name[i] == "p") {
-				uncoolName = uncoolName.replaceAt(i, "d");
-			}
-			}
- };
- }
   return [uncoolName];
-
 };
-
 
 module.exports = uncoolify;

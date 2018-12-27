@@ -368,7 +368,7 @@ coolifyDicts.newemoji= {
 	'c':'↪️',
 	'd':'↩️',
 	'e':'📚',
-	'f':'🏳️‍🌈',
+	'f':'🏳️‍',
 	'g':'📿',
 	'h':'🍽',
 	'i':'🔩',
@@ -450,13 +450,13 @@ coolify.alphaNumericName = function(name) {
 		let cool_name_newemoji = name.allReplace(coolifyDicts.newemoji);
 		let cool_name_mathematicalfraktur = name.allReplace(coolifyDicts.mathematicalfraktur);
 
-
-		return [cool_name_alphanum, cool_name_rounded, cool_name_square, cool_name_round_alphanum, cool_name_symbolic, cool_name_mirrored, cool_name_emoji, cool_name_xabovebelow, cool_name_upsidedown, cool_name_wavy, cool_name_curr, cool_name_fairy, cool_name_dot,cool_name_doublestruck,cool_name_unicodemix,cool_name_newemoji,cool_name_mathematicalfraktur];
-
-
+    return [cool_name_alphanum, cool_name_rounded, cool_name_square, cool_name_round_alphanum, cool_name_symbolic, cool_name_mirrored, cool_name_emoji, cool_name_xabovebelow, cool_name_upsidedown, cool_name_wavy, cool_name_curr, cool_name_fairy, cool_name_dot,cool_name_doublestruck,cool_name_unicodemix,cool_name_newemoji,cool_name_mathematicalfraktur];
+    
+    
 	} else {
 		return false;
 	}
 };
 
 module.exports = coolify;
+
